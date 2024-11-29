@@ -31,7 +31,7 @@ jobs:
         
 
       - name: "Building docker image"
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/ reham .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/reham .
 
       - name: "pushing to Docker hub"
         run: docker push ${{ secrets.DOCKER_USERNAME }}/ reham
